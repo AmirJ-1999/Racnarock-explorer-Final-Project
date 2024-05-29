@@ -1,0 +1,81 @@
+﻿body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.hero {
+    background-color: #EF6407;
+    color: white;
+    padding: 60px 0;
+}
+
+    .hero h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+        margin-bottom: 0;
+    }
+
+.info-section-container {
+    padding: 40px 0;
+}
+
+.info-section {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #EF6407;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    .info-section:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .info-section h2 {
+        color: #EF6407;
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    .info-section p {
+        font-size: 1.1em;
+        color: #555;
+        flex-grow: 1;
+    }
+
+    .info-section a {
+        color: #EF6407;
+        text-decoration: underline;
+    }
+
+        .info-section a:hover {
+            text-decoration: none;
+        }
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .info-section h2 {
+        font-size: 1.3em;
+    }
+
+    .info-section p {
+        font-size: 1em;
+    }
+}

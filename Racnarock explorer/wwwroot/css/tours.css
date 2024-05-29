@@ -1,0 +1,226 @@
+﻿/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #EF6407;
+    color: white;
+}
+
+    .header h1 {
+        margin: 0;
+        font-size: 2.5em;
+    }
+
+/* Actions Section */
+.actions-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+    .search-bar .input-group {
+        width: 100%;
+    }
+
+        .search-bar .input-group .form-control {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+    .search-bar .input-group-append .btn {
+        margin-left: 10px; /* Add space between search input and button */
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+.add-tour-button .btn {
+    background-color: #EF6407;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+    .add-tour-button .btn:hover {
+        background-color: darkorange;
+    }
+
+/* Tour Items */
+.tour-list {
+    margin-top: 20px;
+}
+
+.tour-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+    .tour-item h3 {
+        color: #EF6407;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .tour-item p {
+        font-size: 1em;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .tour-item .btn {
+        background: #EF6407;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .tour-item .btn:hover {
+            background: darkorange;
+        }
+
+.tour-actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+    .tour-actions .btn {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        background: #EF6407;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .tour-actions .btn:hover {
+            background: #e67e00;
+        }
+
+/* Custom Audio Player Styles */
+.custom-audio-controls {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+    .custom-audio-controls .btn {
+        margin-right: 10px;
+    }
+
+    .custom-audio-controls .play-pause-btn {
+        background-color: #EF6407;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .custom-audio-controls .stop-btn {
+        background-color: #EF6407;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .tour-item {
+        padding: 15px;
+    }
+
+        .tour-item h3 {
+            font-size: 1.2em;
+        }
+
+        .tour-item p {
+            font-size: 14px;
+        }
+
+    .tour-actions .btn {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 8px;
+    }
+
+    .tour-item audio {
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 5px;
+        background-color: #f4f4f4;
+        padding: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .tour-item button {
+        display: inline-block;
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .tour-item h3 {
+        font-size: 1em;
+    }
+
+    .tour-item p {
+        font-size: 12px;
+    }
+
+    .tour-actions .btn {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 6px;
+    }
+}

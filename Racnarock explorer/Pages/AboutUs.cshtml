@@ -1,0 +1,41 @@
+﻿@page
+@model AboutUsModel
+@{
+    ViewData["Title"] = "Om os";
+}
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/aboutus.css" asp-append-version="true" />
+
+<div class="hero">
+    <div class="container text-center">
+        <h1 class="display-4 mt-4">@ViewData["Title"]</h1>
+        <p class="lead">En mere brugervenlig rundvisning til rockmuseet.</p>
+    </div>
+</div>
+
+<div class="container info-section-container">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 d-flex align-items-stretch">
+            <div class="info-section flex-fill">
+                <h2>Om os</h2>
+                <p>Velkommen til Ragnarock-museets hjemmeside, dit digitale vindue til rockmusikkens fascinerende verden! Vi er stolte af at præsentere "Ragnarock Explorer", en innovativ mobilapp, der tilbyder en personlig og fleksibel museumsoplevelse.</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 d-flex align-items-stretch">
+            <div class="info-section flex-fill">
+                <h2>Ragnarock Explorer</h2>
+                <p>For en personlig og fleksibel rundvisning er Ragnarock Explorer perfekt. Vores app lader dig lytte til rundvisninger direkte fra din telefon. I modsætning til traditionelle audioguides, giver Ragnarock Explorer dig frihed til at udforske i dit eget tempo med dine egne høretelefoner. Oplev rockmusikkens historie med høj kvalitet formidling.</p>
+                <p>Med Ragnarock Explorer kan du nemt navigere gennem museets udstillinger og opleve vores fascinerende samlinger på en ny og interaktiv måde. Hver rundvisning er fyldt med ikoniske øjeblikke og spændende fortællinger, der bringer rockens historie til live.</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 d-flex align-items-stretch">
+            <div class="info-section flex-fill">
+                <h2>Download Appen</h2>
+                <p>Er du klar til at opleve rockmusikkens historie på en helt ny måde? Download Ragnarock Explorer i dag fra App Store eller Google Play, og begynd din rejse gennem rockens verden med det samme. Besøg vores <a href="path/to/download-page">download-side</a> for at komme i gang.</p>
+            </div>
+        </div>
+    </div>
+</div>
